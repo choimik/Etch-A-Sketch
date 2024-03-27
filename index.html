@@ -10,19 +10,39 @@
 <body>
     <div class="container"></div>
     <div class="settings">
-        <div class="resizeSetting">
-            <div>
-                <h4>Width:</h4>
-                <input type="text" id="#width">
+        <div class="colorSetting">
+            <div class="colorSelectorSetting">
+                <label name="color">Color Selector</label>
+                <input type="color" id="colorSelector">
             </div>
-            <div>
-                <h4>Height:</h4>
-                <input type="text" id="#height">
+            <div class="randomSetting">
+                <label name="checkbox">Random Color</label>
+                <input type="checkbox" id="random">
             </div>
-            <button id="#resize">Resize</button>
+            <div class="opacitySetting">
+                <label name="checkbox">Opacity</label>
+                <input type="checkbox" id="opacity">
+            </div>
         </div>
-        <h4>Random Color</h4>
-        <input type="checkbox">
+        <div class="gridSetting">
+            <div class="resizeSetting">
+                <div>
+                    <label name="width">Width:</label>
+                    <input type="text" id="width">
+                </div>
+                <div>
+                    <label name="height">Height:</label>
+                    <input type="text" id="height">
+                </div>
+                <button id="resize">Resize</button>
+            </div>
+            <div class="borderSetting">
+                <label name="border">Border</label>
+                <input type="checkbox" id="border">
+            </div>
+
+            <button id="clear">Clear</button>
+        </div>
     </div>
 
 </body>

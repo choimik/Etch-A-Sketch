@@ -15,14 +15,37 @@
 /* could change so that border width is relational to screen */
 
 .border-right{
-    border-right: 2px solid red;
+    border-right: 1px solid red;
 }
 
 .border-bottom{
-    border-bottom: 2px solid red;
+    border-bottom: 1px solid red;
 }
 
 .row {
     display: flex;
     flex: 1;
 }
+
+.settings{
+
+}
+
+.resizeSetting{
+
+}
+
+.borderSetting{
+
+}
+
+.colorSetting{
+
+}
+
+.colorSelectorSetting{
+
+}
+
+
+
