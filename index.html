@@ -8,42 +8,47 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container"></div>
-    <div class="settings">
-        <div class="colorSetting">
-            <div class="colorSelectorSetting">
-                <label name="color">Color Selector</label>
-                <input type="color" id="colorSelector" value="#0000FF">
-            </div>
-            <div class="randomSetting">
-                <label name="checkbox">Random Color</label>
-                <input type="checkbox" id="random">
-            </div>
-            <div class="opacitySetting">
-                <label name="checkbox">Opacity</label>
-                <input type="checkbox" id="opacity">
-            </div>
-        </div>
-        <div class="gridSetting">
-            <div class="resizeSetting">
-                <div>
-                    <label name="width">Width:</label>
-                    <input type="text" id="width">
-                </div>
-                <div>
-                    <label name="height">Height:</label>
-                    <input type="text" id="height">
-                </div>
-                <button id="resize">Resize</button>
-            </div>
-            <div class="borderSetting">
-                <label name="border">Border</label>
-                <input type="checkbox" id="border">
-            </div>
+    <header><h1>Etch-A-Sketch</h1></header>
+    <div class="main">
+        <div class="container"></div>
 
-            <button id="clear">Clear</button>
+        <div>
+            <div class="settings">
+                <div class="resizeSetting">
+                    <div class="dimension">
+                        <div>
+                            <label name="height">Height:</label>
+                            <input type="text" id="height">
+                        </div>
+                        <div>
+                            <label name="width">Width:</label>
+                            <input type="text" id="width">
+                        </div>
+                    </div>
+                    <button id="resize">Resize</button>
+                </div>
+            
+                <div class="colorSetting">
+                    <div class="colorSelectorSetting">
+                        <label name="color">Color Selector:</label>
+                        <input type="color" id="colorSelector" value="#0000FF">
+                    </div>
+                    <div class="randomSetting">
+                        <label name="checkbox">Random Color:</label>
+                        <input type="checkbox" id="random">
+                    </div>
+                    <div class="opacitySetting">
+                        <label name="checkbox">Opacity:</label>
+                        <input type="checkbox" id="opacity">
+                    </div>
+                    <div class="borderSetting">
+                        <label name="border">Border:</label>
+                        <input type="checkbox" id="border">
+                    </div>
+                </div>
+                <button id="clear">Clear</button>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

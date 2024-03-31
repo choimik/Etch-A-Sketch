@@ -86,6 +86,7 @@ clear.addEventListener("click", () =>{
     clearBoard();
 });
 
+const click = new Event("click");
 let gridBorder = document.querySelector("#border")
 let borderState = false;
 
@@ -99,6 +100,9 @@ gridBorder.addEventListener("click", () => {
         borderState = true;
     }
 });
+
+gridBorder.dispatchEvent(click);
+gridBorder.checked = true;
 
 let random = document.querySelector("#random");
 let randomState = false;
