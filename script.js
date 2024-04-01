@@ -126,6 +126,15 @@ opacity.addEventListener("click", () =>{
     dict = {};
 });
 
+
+colorSelector.addEventListener("mousedown", () =>{
+    if (!(opacityState && randomState)){
+        pixelArray = new Array(width*height).fill(0).map(() => new Array(4).fill(0));
+        pixelArrayTracker = 0;
+        dict = {};
+    }
+});
+
 function createBoard(width, height){
     board = new Array(height).fill(0).map(()=> new Array(width).fill(0));
     pixelArray = new Array(width*height).fill(0).map(() => new Array(4).fill(0));

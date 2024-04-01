@@ -8,23 +8,24 @@
 body{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(174, 174, 236);
 }
 
 header h1{
-    height: 10%;
-    padding: 3% 0;
+    padding: 1.5% 0;
     text-align: center;
     background-color: rgb(107, 116, 218);
     color: white;
 }
 
 .main{
-    height: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgb(174, 174, 236);
-    padding: 5%;
+    margin: 5% 0;
 }
 .container{
     min-width: 200px;
@@ -32,7 +33,6 @@ header h1{
     flex-direction: column;
     flex-wrap: wrap;
     width: 47%;
-    margin: 0 2%;
     aspect-ratio: 1/1;
     border: 2px solid rgb(85, 85, 85);
     background-color: rgb(255, 255, 255);
